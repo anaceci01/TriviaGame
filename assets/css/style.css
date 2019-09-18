@@ -1,0 +1,34 @@
+body {
+    background-color: #c7ecee;
+}
+
+#main-block {
+    min-height: 550px;
+    min-width: 700px;
+    background-color: #95afc0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+h1 {
+    font-size: 120px;
+}
+
+#show-number {
+     color: #f5f6fa;
+     justify-content: center;
+     text-align: center;
+}
+
+#start {
+    justify-content: center;
+    text-align: center;
+    border-top: 5px;
+}
+
