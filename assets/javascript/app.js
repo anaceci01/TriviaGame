@@ -45,7 +45,7 @@ var myQuestions = [
   answers: ["Pepper and mustard", "Garlic Salt and Pepper", "Himalayan Salt and Paprika", "Basil and Mustard"],
   correctAnswer: "Pepper and Mustard"
 },
-
+]
 
 
 $("#start").on("click", run);
@@ -55,6 +55,8 @@ function run() {
   clearInterval(intervalID);
   intervalID = setInterval(decrement, 1000);
 }
+
+setTimeout(decrement, 1000);
 
 //decrement function
 function decrement() {

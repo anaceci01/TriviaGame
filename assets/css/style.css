@@ -1,11 +1,12 @@
 body {
-    background-color: #c7ecee;
+background-image: url("https://images.pexels.com/photos/2941017/pexels-photo-2941017.jpeg?cs=srgb&dl=aerial-photography-aerial-shot-aerial-view-2941017.jpg&fm=jpg")
 }
+
 
 #main-block {
     min-height: 550px;
     min-width: 700px;
-    background-color: #95afc0;
+    background-color: #c7ecee;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -18,17 +19,13 @@ body {
 
 h1 {
     font-size: 120px;
+    color: #fffdf8;
+    text-align: center;
 }
 
 #show-number {
-     color: #f5f6fa;
+     color: black;
      justify-content: center;
-     text-align: center;
 }
 
-#start {
-    justify-content: center;
-    text-align: center;
-    border-top: 5px;
-}
 
