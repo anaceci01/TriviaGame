@@ -1,5 +1,6 @@
-var timer = 30;
+var timer = 10;
 var intervalID;
+var counter;
 
 
 // Questions
@@ -47,27 +48,83 @@ var myQuestions = [
 },
 ]
 
+// function startTimer(){
+//   var counter = 5;
+//   setInterval(function() {
+//     counter--;
+//     if (counter >= 0) {
+//       span = document.getElementById("show-number");
+//       span.innerHTML = counter;
+//     }
+//     if (counter === 0) {
+//         alert('sorry, out of time');
+//         clearInterval(counter);
+//     }
+//   }, 1000);
+// }
 
-$("#start").on("click", run);
+// $("#startClock").click(function(){
+//     startTimer();
+// });
 
-//run function
+
+
+
+
+
+
+
+
+
+// $("#startClock").click( function(){
+//   var timer = 10;
+//   setInterval(function() {
+//     counter--;
+//      if (timer >= 0) {
+//         span = document.getElementById("show-number");
+//         span.innerHTML = counter;
+//      }
+//      if (timer === 0) {
+//         alert('sorry, out of time');
+//         clearInterval(timer);
+//       }
+//     }, 1000);
+// });
+
+
+
+
+// $(document).ready(function() {
+//   var doUpdate = function() {
+//     $(".contdown").each(function(){
+//       var count = parseInt($(this).html());
+//     if (count !== 0) {
+//       $(this).html(count - 1);
+//     }
+//     });
+// };
+// setInterval(doUpdate, 1000);
+// });
+
+
+// //run function
 function run() {
-  clearInterval(intervalID);
-  intervalID = setInterval(decrement, 1000);
-}
-
-setTimeout(decrement, 1000);
+  $("#startClock").click(function run() {
+  run= setInterval(decrement, 1000);
+    clearInterval(intervalID);
+  //intervalID = setInterval(decrement, 1000);
+});
 
 //decrement function
 function decrement() {
   timer--;
   $("#show-number").html("<h1>" + timer + "</h1>");
-  if (timer === 0) {
+  if (timer <= 0) {
     stop()
   }
 }
 
-//stop function
+// //stop function
 function stop() {
   clearInterval(intervalID)
 }
