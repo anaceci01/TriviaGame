@@ -1,135 +1,76 @@
-var timer = 10;
+//var timer = 10;
 var intervalID;
-var counter;
+var counter = 10;
 
 
 // Questions
 var myQuestions = [
   {
-    question: "How many continents are in the world?",
-    answers: ["8", "6", "7", "9"],
-    correctAnswer: "8"
+    question: "What causes the ocean's tides?",
+    answers: ["Orbit of the earth aroun the sun", "Gravitational pull of the sun", "Gravitational pull of the moon", "Rotation of the earth"],
+    correctAnswer: "Gravitational pull of the sun"
   },
 
   {
-    question: "On a farm, a kid is a baby?",
-    answers: ["Goat", "Horse", "Boy", "Pig"],
-    correctAnswer: "Goat"
+    question: "The water _________ in northern oceans",
+    answers: ["Is saltiest", "Spins clockwise", "Freezes often", "Spins counterclockwise"],
+    correctAnswer: "Spins clockwise"
   },
 
 {
-  question: "Which State is called the Volunteer State?",
-  answers: ["California", "Indiana", "Tennessee", "Minnesota"],
-  correctAnswer: "Tennessee"
+  question: "Which was the new ocean named in 2000?",
+  answers: ["Artic Ocean", "Pacific Ocean", "Southern Ocean", "Indian Ocean"],
+  correctAnswer: "Southern Ocean"
 },
   
 {
-  question: "What is the name of Han Solo's ship?",
-  answers: ["Millennium Falcon", "YT-1300", "Lando Calrissian", "Sabaac"],
-  correctAnswer: "Millennium Falcon"
+  question: "How much of the world is covered by water?",
+  answers: ["70 percent", "50 percent", "30 percent", "15 percent"],
+  correctAnswer: "70 percent"
 },
  
 {
-  question: "What yard line must a football team drive to, to reach the red-zone?",
-  answers: ["The Fourty", "The Thirty", "The Twenty", "The Ten"],
-  correctAnswer: "The Twenty"
+  question: "How many oceans are there today",
+  answers: ["3", "4", "5", "6"],
+  correctAnswer: "5"
 },
 
 {
-  question: "What are the two top selling spices in the world?",
-  answers: ["Pepper and mustard", "Garlic Salt and Pepper", "Himalayan Salt and Paprika", "Basil and Mustard"],
-  correctAnswer: "Pepper and Mustard"
+  question: "Waves are caused by _________",
+  answers: ["Gravitational pull of the moon", "Temperature", "Rain", "Wind"],
+  correctAnswer: "Wind"
 },
 
 {
-  question: "What is the only essential vitamin not found in white potatoes?",
-  answers: ["Pepper and mustard", "Garlic Salt and Pepper", "Himalayan Salt and Paprika", "Basil and Mustard"],
-  correctAnswer: "Pepper and Mustard"
+  question: "One cubic foot of ocean water contains over ______ of salt",
+  answers: ["4 pounds", "2 pounds", "1 pound", "5 pounds"],
+    correctAnswer: "2 pounds"
 },
+
+{
+  question: "The Red Sean and _____ have the saltiest water of all open seas and oceans",
+  answers: ["Persian Gulf", "Caspian Sea", "Dead Sea", "Atlantic Ocean"],
+  correctAnswer: "Persian Gulf"
+}
 ]
 
-// function startTimer(){
-//   var counter = 5;
-//   setInterval(function() {
-//     counter--;
-//     if (counter >= 0) {
-//       span = document.getElementById("show-number");
-//       span.innerHTML = counter;
-//     }
-//     if (counter === 0) {
-//         alert('sorry, out of time');
-//         clearInterval(counter);
-//     }
-//   }, 1000);
-// }
-
-// $("#startClock").click(function(){
-//     startTimer();
-// });
-
-
-
-
-
-
-
-
-
-
-// $("#startClock").click( function(){
-//   var timer = 10;
-//   setInterval(function() {
-//     counter--;
-//      if (timer >= 0) {
-//         span = document.getElementById("show-number");
-//         span.innerHTML = counter;
-//      }
-//      if (timer === 0) {
-//         alert('sorry, out of time');
-//         clearInterval(timer);
-//       }
-//     }, 1000);
-// });
-
-
-
-
-// $(document).ready(function() {
-//   var doUpdate = function() {
-//     $(".contdown").each(function(){
-//       var count = parseInt($(this).html());
-//     if (count !== 0) {
-//       $(this).html(count - 1);
-//     }
-//     });
-// };
-// setInterval(doUpdate, 1000);
-// });
-
-
-// //run function
-function run() {
-  $("#startClock").click(function run() {
-  run= setInterval(decrement, 1000);
-    clearInterval(intervalID);
-  //intervalID = setInterval(decrement, 1000);
+function startTimer(){
+  var counter = 10;
+  setInterval(function(){
+    counter--;
+    if(counter >= 0){
+      span = document.getElementById("count");
+      span.innerHTML = counter;
+    }
+    if(counter === 0){
+      clearInterval(counter);
+    }
+  }, 1000);
+}
+$("#startClock").click(function(){
+  startTimer();
+  console.log(counter)
 });
-
-//decrement function
-function decrement() {
-  timer--;
-  $("#show-number").html("<h1>" + timer + "</h1>");
-  if (timer <= 0) {
-    stop()
-  }
-}
-
-// //stop function
-function stop() {
-  clearInterval(intervalID)
-}
-//restart
-run()
 
 
 

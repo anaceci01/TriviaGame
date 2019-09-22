@@ -12,6 +12,7 @@
 
     <!--Stylesheets-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
 
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
@@ -33,23 +34,44 @@
 </head>
 
 <body>
-    <h1> <h1> Trivia Time </h1></h1>
+    <h1>
+        <h1> Ocean Trivia Time </h1>
+    </h1>
 
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-7" id="main-block">
-                <!--Start Button-->
-                <div class="row">
-                    <div class="col-sm-6">
-                        <button id="startClock" type="button" class="btn btn-secondary btn-lg btn-block">Start Game</button>
+                <div class="row justify-content-center">
+                <!----------------------Start Button----------------------->
+                        <div class="col-sm-6">
+                            <a href="#" id="startClock">Start</a>
+                        </div>
+                <!----------------------Counter----------------------->
+                <div class="col-sm-6">
+                    <span id="count">10</span>
                     </div>
-                    <div class="col-sm-6">
-                        <div id="show-number"></div>
+                </div>
+                <!----------------------Question Area----------------------->
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div id="questions"></div>
                     </div>
+                </div>
+                    <!----------------------Footer----------------------->
+                    <footer class="footer full-view">
+                        <div class="container.fluid">
+                            <div class="row justify-content-center">
+                                <div class="col-6 text-center">
+                                    <span id="copywright">copyright</span>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>
-    </div>  
+
+
 
 
 

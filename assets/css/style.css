@@ -1,5 +1,7 @@
 body {
-background-image: url("https://images.pexels.com/photos/2941017/pexels-photo-2941017.jpeg?cs=srgb&dl=aerial-photography-aerial-shot-aerial-view-2941017.jpg&fm=jpg")
+background-image: url("https://images.pexels.com/photos/2941017/pexels-photo-2941017.jpeg?cs=srgb&dl=aerial-photography-aerial-shot-aerial-view-2941017.jpg&fm=jpg");
+background-size: 100%;
+
 }
 
 
@@ -16,20 +18,53 @@ background-image: url("https://images.pexels.com/photos/2941017/pexels-photo-294
     top: 55%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    padding: 0px;
+    border:0px;
 }
 h1 {
     font-size: 100px;
     text-align: center;
+    background-color: #1f2833;
+    color: #66fcf1;
+
 }
 
 #show-number {
      color: rgb(3, 79, 85);
     float: right;
+    height: 100px;
+    padding: 0;
 }
 
 #start {
     position: absolute;
     bottom:20%;
+}
+
+#startClock {
+    background-color: #f05a87;
+    color: #66fcf1;
+    height: 30px;
+    width: 50px; 
+}
+
+#questions {
+    width: 100%;
+    height: 350px;
+    background-color: #C4C1B4;
+    display: block;
+    }
+
+.footer {
+    background-color: #1f2833;
+    color: #66fcf1;
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    border: 0px;
+    margin-top: 60px;
+    display: block;
+    overflow: auto;
 }
 
 
