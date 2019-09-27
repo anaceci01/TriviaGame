@@ -1,14 +1,11 @@
 <!doctype html>
 <html lang="en">
 
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--Stylesheets-->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -25,62 +22,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
+    <!-- Script -->
+    <script type defer="text/javascript" src="assets/javascript/app.js"></script>
+    <!-- jQuery -->
+    <script type defer="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>Trivia Game</title>
 </head>
 
 <body>
-    <h1>
-        <h1> Ocean Trivia Time </h1>
-    </h1>
-
+    <!----------------------Question Area----------------------->
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-7" id="main-block">
-                <div class="row justify-content-center">
-                <!----------------------Start Button----------------------->
-                        <div class="col-sm-6">
-                            <a href="#" id="startClock">Start</a>
-                        </div>
-                <!----------------------Counter----------------------->
-                <div class="col-sm-6">
-                    <span id="count">10</span>
-                    </div>
-                </div>
-                <!----------------------Question Area----------------------->
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div id="questions"></div>
-                    </div>
-                </div>
-                    <!----------------------Footer----------------------->
-                    <footer class="footer full-view">
-                        <div class="container.fluid">
-                            <div class="row justify-content-center">
-                                <div class="col-6 text-center">
-                                    <span id="copywright">copyright</span>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-                </div>
+        <div id="questions-area" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
             </div>
         </div>
-
-
-
-
-
-        <!-- jQuery -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-        <!-- Script -->
-        <script type="text/javascript" src="assets/javascript/app.js"></script>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
 </body>
 
 
