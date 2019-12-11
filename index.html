@@ -20,33 +20,48 @@
     <title>Trivia Game</title>
 </head>
 
-<!----------------------Question Area----------------------->
+<body>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 col-md-offset-3">
-            <img src="assets/images/LogoMakr_4IuBps.png">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-7" id="main-block">
+                <h1> Trivia Time </h1>
+                <!--Start Button-->
+                <div class="row-start">
+                    <div class="col-sm-6">
+                        <button id="start" type="button" class="btn btn-secondary btn-lg btn-block">Start Game</button>
+                    </div>
+                    <!--Show Countdown-->
+                    <div class="col-sm-6">
+                        <div id="show-number"></div>
+                    </div>
+                </div>
+                <!--Questions Area-->
+                <div class="row-questions">
+                    <div class="col-sm-12">
+                        <div id="questions"><span id="questions">Questions Goes Here</span></div>
+                    </div>
+                </div>
+                <!--Results-->
+                <div class="row-questions">
+                    <div class="col-sm-12">
+                        <div id="questions"><span id="questions">Questions Goes Here</span></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Timer-->
+
+
         </div>
     </div>
-    <div id="question-container" class="hide">
-        <div id="question">
-            <h1>Question: </h1>
-        </div>
-        <div id="answer-buttons" class="btn-grid">
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 2</button>
-            <button class="btn">Answer 3</button>
-            <button class="btn">Answer 4</button>
-        </div>
     </div>
-    <div class="controls">
-        <button id="start-btn" class="start-btn btn">Start</button>
-        <button id="next-btn" class="next-btn btn hide">Next</button>
     </div>
-</div>
 
 
-<script type="text/javascript" src="./assets/javascript/app.js"></script>
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
 
 </body>
 

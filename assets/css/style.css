@@ -60,6 +60,13 @@ border-color: black;
     align-items: center;
 }
 
+<<<<<<< HEAD
 .hide {
     display: none;
+=======
+#questions {
+    background-color: azure;
+    width: 100%;
+    height:200px;
+>>>>>>> f0c495a9a9f24f696d98e8c1435245660cd93e9e
 }
