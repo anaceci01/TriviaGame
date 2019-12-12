@@ -21,43 +21,35 @@
 </head>
 
 <body>
-
+    <!------------ logo ---------------->
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-7" id="main-block">
-                <h1> Trivia Time </h1>
-                <!--Start Button-->
-                <div class="row-start">
-                    <div class="col-sm-6">
-                        <button id="start" type="button" class="btn btn-secondary btn-lg btn-block">Start Game</button>
-                    </div>
-                    <!--Show Countdown-->
-                    <div class="col-sm-6">
-                        <div id="show-number"></div>
-                    </div>
-                </div>
-                <!--Questions Area-->
-                <div class="row-questions">
-                    <div class="col-sm-12">
-                        <div id="questions"><span id="questions">Questions Goes Here</span></div>
-                    </div>
-                </div>
-                <!--Results-->
-                <div class="row-questions">
-                    <div class="col-sm-12">
-                        <div id="questions"><span id="questions">Questions Goes Here</span></div>
-                    </div>
+        <div class="row">
+            <div class="col-m-3 col-md-offset-3">
+                <img src="assets/images/LogoMakr_4IuBps.png">
+                <h2>Answer the questions before your time runs out!</h2>
+
+            </div>
+        </div>
+        <!------------ questions ---------------->
+        <div id="question-container" class="hide">
+            <div id="questions">
+                <div id="answer-button" stye="visibility: hidden" ; class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
                 </div>
             </div>
-
-
-
-            <!--Timer-->
-
-
+            <!------------ timer ---------------->
+            <div id="timer">
+                <h1 id="showTimer">1:00</h1><br>
+            </div>
         </div>
-    </div>
-    </div>
+        <!------------ controls ---------------->
+        <div class="controls">
+            <button id="start-btn" style="visibility: visible" ; class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
     </div>
 
 
